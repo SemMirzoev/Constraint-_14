@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<ImageView
+    android:id="@+id/art"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/devian_art_website_favicon_color_1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="80dp"
+    />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unleash your creativity and let your artistic vision soar."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/art"
+        app:layout_constraintBottom_toTopOf="@id/text2"
+        android:padding="40dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unleash the Magic of Creation!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintBottom_toTopOf="@id/facebook"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP WITH FACEBOOK"
+        android:textSize="16sp"
+        android:backgroundTint="#3A5998"
+        android:drawableLeft="@drawable/facebook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        app:layout_constraintBottom_toTopOf="@id/mail"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="36dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP WITH EMAIL"
+        android:textSize="16sp"
+        android:backgroundTint="#228812"
+        android:drawableLeft="@drawable/letter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/facebook"
+        app:layout_constraintBottom_toTopOf="@id/textLast1"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        />
+
+    <TextView
+        android:id="@+id/textLast1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mail"
+        app:layout_constraintEnd_toStartOf="@id/textLast2"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+
+    <TextView
+        android:id="@+id/textLast2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textSize="16sp"
+        android:textColor="#00B5EE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mail"
+        app:layout_constraintStart_toEndOf="@id/textLast1"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
